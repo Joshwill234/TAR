@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-uk5=usgu50y0jp4hric=o!g34!b@_sth9)a9%##x@nanfwx$tk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-nielmc-django-project-0kylrta3cs.us2.codeanyapp.com','tastyafricanrecipes-ddfd2fc577ea.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = [ 'https://*.herokuapp.com']
+
 
 
 # Application definition

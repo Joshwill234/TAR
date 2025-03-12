@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-nielmc-django-project-0kylrta3cs.us2.codeanyapp.com','tastyafricanrecipes-ddfd2fc577ea.herokuapp.com']
+ALLOWED_HOSTS = ['8000-nielmc-django-project-0kylrta3cs.us2.codeanyapp.com', 'tastyafricanrecipes-ddfd2fc577ea.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = [ 'https://*.herokuapp.com']
 
 
@@ -46,10 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Tasty_African_Recipes',
-    'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
+    'Tasty_African_Recipes',
 
 ]
 

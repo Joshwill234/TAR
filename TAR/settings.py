@@ -35,7 +35,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
    '8000-nielmc-django-project-0kylrta3cs.us2.codeanyapp.com', 
    'tastyafricanrecipes-ddfd2fc577ea.herokuapp.com','127.0.0.1',]
-CSRF_TRUSTED_ORIGINS = [ 'https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com']
 
 
 

@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=Oswald:wght@200..700&display=swap')
+
+/* Asteric */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+
 header {
 
-    background-color: #333;
+    background-color: orangered;
 }
 
 main {
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color:lightblue 
+    flex: 1 0 auto;
 }
 
 footer {
-    background-color: #333;
+    background-color: orangered;
     color: #fff;
     text-align: center;
     padding: 10px;

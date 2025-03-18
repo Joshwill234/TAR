@@ -1,11 +1,5 @@
 from django.shortcuts import render
-from django.views import generic
-from .models import Post
 
+def index(request):
+    return render(request, "Tasty_African_Recipes/index.html")
 
-# Create your views here.
-
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1)
-    template_name = "Tasty_African_Recipes/index.html"
-    paginate_by = 6

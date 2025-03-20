@@ -20,6 +20,16 @@ class Post(models.Model):
 def __str__(self):
         return f"{self.title} | written by {self.author}"
 
+# Event model
+class Event(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    date = models.DateTimeField()
+    location = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.title
+
 # Comment model
 class Comment(models.Model):
     post = models.ForeignKey(

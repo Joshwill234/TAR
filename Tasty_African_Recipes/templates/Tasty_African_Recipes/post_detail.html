@@ -13,7 +13,7 @@
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
+                <img src="{% static 'images/iyan.png' %}" class="scale" alt="placeholder">
             </div>
         </div>
     </div>
@@ -97,6 +97,20 @@
       {% endif %}
     </div>
   </div>
+  </div>
+  <!-- Displaying like button and like count -->
+  <div class="row">
+    <div class="col-12">
+      <p>{{ total_likes }} likes</p>
+      <form action="{% url 'post_like' post.slug %}" method="post">
+        {% csrf_token %}
+        {% if liked %}
+        <button type="submit" class="btn btn-danger">Unlike</button>
+        {% else %}
+        <button type="submit" class="btn btn-primary">Like</button>
+        {% endif %}
+      </form>
+    </div>
   </div>
 </div>
 <!-- Delete confirmation modal -->

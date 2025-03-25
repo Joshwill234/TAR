@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.urls import reverse  # Import reverse function
 from .models import Post, Comment, Like
 from .forms import CommentForm
 

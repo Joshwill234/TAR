@@ -29,7 +29,8 @@ Authenticated users can like or unlike recipes. The like button is displayed on 
 Authenticated users can add comments to recipes. Users can also edit or delete their own comments.
 
 ## Models
-![User Flow](images/user_flow_page_1.png)
+![image](https://github.com/user-attachments/assets/b6b27fa7-501b-4f11-aa53-766acce273c7)
+
 
 
 ## Templates

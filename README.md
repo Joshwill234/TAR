@@ -173,5 +173,8 @@ Django
 Bootstrap
 Font Awesome
 Django Allauth
+Ai
+Python
+Javascripts
 
 This README file provides an overview of the project, including its features, installation instructions, usage, project structure, models, views, templates, and acknowledgements. 

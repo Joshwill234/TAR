@@ -7,11 +7,13 @@ from django.http import HttpResponseRedirect
 from .models import Post, Comment, Like
 from .forms import CommentForm
 
+
 # Create your views here.
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = "Tasty_African_Recipes/index.html"
     paginate_by = 6
+
 
 def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
@@ -46,21 +48,25 @@ def post_detail(request, slug):
         },
     )
 
+
 @method_decorator(login_required, name='dispatch')
 class PostLike(View):
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
-        like, created = Like.objects.get_or_create(post=post, user=request.user)
+        like, created = Like.objects.get_or_create(
+            post=post,
+            user=request.user
+        )
         if not created:
             like.delete()
         return redirect('post_detail', slug=slug)
+
 
 def comment_edit(request, slug, comment_id):
     """
     view to edit comments
     """
     if request.method == "POST":
-
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comment = get_object_or_404(Comment, pk=comment_id)
@@ -76,6 +82,7 @@ def comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 def comment_delete(request, slug, comment_id):
     """

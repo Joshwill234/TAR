@@ -28,6 +28,16 @@ Authenticated users can like or unlike recipes. The like button is displayed on 
 ### Commenting on Recipes
 Authenticated users can add comments to recipes. Users can also edit or delete their own comments.
 
+
+## Wireframes
+Wire frame designs from Balsamiq
+
+![image](https://github.com/user-attachments/assets/42e62b53-36c6-4fd6-9481-d97d79006d45)
+![image](https://github.com/user-attachments/assets/05956ab5-e148-4d65-96fb-c69d546d6291)
+![image](https://github.com/user-attachments/assets/44ec1553-f5aa-446f-95aa-79c12f8e44fd)
+
+
+
 ## Models
 ![image](https://github.com/user-attachments/assets/b6b27fa7-501b-4f11-aa53-766acce273c7)
 
